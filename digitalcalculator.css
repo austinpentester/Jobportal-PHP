@@ -1,0 +1,131 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+font-family: 'Poppins',sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#2196f3, #e91e63);
+}
+.bubbles{
+    position: absolute;
+    bottom: -100px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.bubbles span{
+    height: 60px;
+    width: 60px;
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    animation: move 10s linear infinite;
+    position: relative;
+    overflow: hidden;
+}
+@keyframes move {
+    100%{
+     transform: translateY(-90vh);
+    }
+}
+.bubbles span.one{
+    animation-delay: 2.2s ;
+    transform: scale(5s);
+}
+.bubbles span.two{
+    animation-delay: 3.5s ;
+    transform: scale(1.55s);
+}
+.bubbles span.three{
+    animation-delay: 0.2s ;
+    transform: scale(0.35);
+}
+.bubbles span.four{
+    animation-delay: 6s ;
+    transform: scale(2.15s);
+}
+.bubbles span.five{
+    animation-delay: 7s ;
+    transform: scale(0.5s);
+}
+.bubbles span.six{
+    animation-delay: 4s ;
+    transform: scale(2.5s);
+}
+.bubbles span.seven{
+    animation-delay: 3s ;
+    transform: scale(1.5s);
+}
+.bubbles span:before{
+content: '';
+position: absolute;
+left: 0;
+right: 0;
+height: 60px;
+width: 40%;
+transform: skew(45deg) translateX(150px);
+background: rgba(255,255,255,0.15);
+animation: mirror 3s linear infinite;
+}
+@keyframes mirror{
+    100%{
+    transform : translateX(-450px);
+    }
+}
+.bubblesspan.one:before{
+    animation-delay: 1.5s;
+}
+.bubblesspan.two:before{
+    animation-delay: 3.5s;
+}
+.bubblesspan.three:before{
+    animation-delay: 2.5s;
+}
+.bubblesspan.four:before{
+    animation-delay: 7.5s;
+}
+.bubblesspan.five:before{
+    animation-delay: 4.5s;
+}
+.bubblesspan.six:before{
+    animation-delay: 0.5s;
+}
+.bubblesspan.seven:before{
+    animation-delay: 6s;
+}
+.container{
+    width: 360px;
+    padding: 15px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    background: rgba(255,255,255,0.1);
+    box-shadow: 0 20px 50px(0,0,0,0.15);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+}
+li.nav-item {
+    margin: 100;
+    display: inline;
+    border-radius: 30px;
+    padding: 50px;
+    background:white;
+    position: relative;
+    text-decoration: none;
+    text-underline-offset: none;
+    transition: 0.5s;
+}
+li.nav-item:hover{
+   background-color: #ffffff42; 
+   transition: 3s;
+}
+a.nav-link {
+    text-decoration: none;
+  ;
+}

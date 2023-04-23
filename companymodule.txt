@@ -1,0 +1,22 @@
+Company Module
+1.Login/SignUp
+2.Add Question & Answer
+3.User List
+
+1.Login/SignUp
+	If the company is new register the company.
+	Login company
+	The company username and passsword is correct go to the company dashboard
+
+2.Add Question & Answer
+	Add question in the question textarea field
+	Each and every question the answer option is vary. So type the answer in type in the answer field then click add button the value is display in the radio button. All the options are added the correct answer is check
+	Select the language type then click the add button
+	The Question and answer is saved in the database
+
+3.User List
+	All the user details are display in the table format
+	If the company add the question mark above particular limit display the test button
+	Company click the test button the test link url is sent to the particular user
+
+	If the company has no question and answer the test button is not shown.
